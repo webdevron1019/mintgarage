@@ -183,6 +183,11 @@ select {
   padding-bottom: 0 !important;
 }
 
+
+.form-row{
+  justify-content: space-evenly !important;
+}
+
 @media only screen and (min-width: 750px) {
   .items {
     height: auto !important;
@@ -644,6 +649,8 @@ select {
   .footer__copyright {
     text-align: center;
     padding: 30px;
+    margin-top: 50px;
+    border-top: solid gray 1px;
   }
   .contact {
     font-size: 14px;
