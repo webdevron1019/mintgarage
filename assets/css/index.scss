@@ -1,0 +1,37 @@
+// *****************************
+//
+//	 style.scss
+//
+// *****************************
+
+// import
+
+@import 'core/setting';
+@import 'utility/import';
+@import './utility/shared';
+
+
+/* ------------------------------------------------------------
+   01. RESET リセット
+   ------------------------------------------------------------ */
+@import 'core/reset';
+@include reset-html5;
+
+@import 'main';
+@include main;
+
+@import 'header';
+@include header;
+
+@import 'footer';
+@include footer;
+// placeholder
+
+/* clearfix */
+%clearfix {
+    @include clearfix;
+}
+
+.cf {
+    @include clearfix;
+}

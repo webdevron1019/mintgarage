@@ -1,0 +1,57 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+@mixin main {
+    .text-caps {
+        color: black !important;
+
+        &:hover {
+            color: #0bdad3 !important;
+
+        }
+    }
+
+    .container {
+        padding-bottom: 0 !important;
+    }
+
+    @media only screen and (min-width: 750px) {
+        .items {
+            height: auto !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+
+        .item {
+            position: unset !important;
+            top: unset !important;
+            left: unset !important;
+            float: unset !important;
+
+
+        }
+
+    }
+
+
+    @media only screen and (max-width: 749px) {
+
+        .page>.content {
+            border-radius: 0;
+        }
+
+        .hero .page-title {
+            height: auto !important;
+
+        }
+
+        .opacity-40 {
+            line-height: 40px !important;
+        }
+    }
+
+
+}

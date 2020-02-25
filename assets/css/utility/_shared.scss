@@ -1,0 +1,44 @@
+$primary-blue-light: #003B71;
+$primary-blue-dark: #002C55;
+$gradient-color: #0064BF;
+$border-light: #CCCCCC;
+$border-dark: #999999;
+$accent-color: #F5F5F5;
+$hiragino:"Noto Sans", "Noto Sans CJK JP", "Hiragino Kaku Go ProN W3", HiraKakuProN-W3, "MS P Gothic", "MS PGothic", "Motoya L Cedar 3 Equal Width", MotoyaLCedar, Verdana, sans-serif;
+$hiraginopron:"Noto Sans", "Noto Sans CJK JP", "Hiragino Kaku Go ProN W3", HiraKakuProN-W3, "MS P Gothic", "MS PGothic", "Motoya L Cedar 3 Equal Width", MotoyaLCedar, Verdana, sans-serif;
+
+@mixin gradient-background {
+    background-color: $gradient-color;
+    background-image: linear-gradient(to right,$gradient-color, $primary-blue-light);
+    @include display-flex(row, null, center, center);
+}
+
+@mixin display-flex ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin custom-font ($size, $weight, $line-height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        @include custom-font(16px,normal,136px,null);
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        @include custom-font(16px,normal,136px,null);
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        @include custom-font(16px,normal,136px,null);
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        @include custom-font(16px,normal,136px,null);
+    }
+  }

@@ -1,0 +1,110 @@
+// *****************************
+//
+//	 _footer.scss
+//
+// *****************************
+
+@mixin footer {
+
+    @media screen and (min-width: 769px) {
+     .footer{
+        position: fixed;
+        width: 100%;
+        padding-top: 10rem;
+        font-size: 14px;
+
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__list{
+
+        }
+        &__item{
+            line-height: 25px;
+        }
+        &__copyright{
+            text-align: center;
+            padding: 30px;
+        }
+     }
+
+     .contact{
+        font-size:14px;
+        &__figure{
+            margin: 20px 0;
+        }
+
+        &__list{
+            margin: 20px 0;
+        }
+        &__item{
+            line-height: 25px;
+        }
+     }
+     .container{
+         padding-bottom: 10rem;
+     }
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .footer .brand {
+          
+            font-size: 3.604vw;
+
+        }
+
+        .text-caps{
+            font-size: 1.823vw;
+            padding: 0.521vw;
+        }
+        .footer{
+            width: 100%;
+            padding-top: 3.906vw;
+            font-size: 1.823vw;
+    
+            &__title{
+                margin-bottom: 2.604vw;
+                font-size: 2.823vw;
+            }
+
+            &__logo{
+                margin-bottom: 3.906vw;
+            }
+            &__list{
+    
+            }
+            &__item{
+                line-height: 5.255vw;
+            }
+            &__copyright{
+                text-align: center;
+                padding: 2.604vw;
+            }
+         }
+    
+         .contact{
+            font-size: 1.823vw;
+            margin-top: 2.604vw;
+            &__figure{
+                margin: 2.604vw 0;
+            }
+            &__title{
+                font-size: 2.823vw;
+            }
+    
+            &__list{
+                margin: 2.604vw 0;
+            }
+            &__item{
+                line-height: 3.255vw;
+            }
+         }
+         .container{
+             padding-bottom: 10rem;
+         }
+    }
+
+}
